@@ -68,8 +68,11 @@ sudo ./ret install <my application> <br>
 
 #For example,<br>
 sudo ./ret install tensorflow <br>
+
 sudo ./ret install pytorch <br>
+
 sudo ./ret install namd <br>
+
 </code>
 
 ## Running the Machine Learning Application
@@ -85,7 +88,8 @@ To train a machine learning model using Tensorflow, use the example below:
 <code>
 git clone https://github.com/tensorflow/models  </code> 
 
-<b>2.	Download the CIFAR-10 dataset using:</b>
+
+<br><b>2.	Download the CIFAR-10 dataset using:</b>
 
 <code>
 pip3 install tensorflow_datasets 
@@ -95,20 +99,16 @@ cd models/tutorials/image/cifar10_estimator
 python3 generate_cifar10_tfrecords.py --data-dir=${PWD}/cifar-10-data 
 
 </code>
-<b>3.	To run on a single node (single GPU), enter </b>
+<br><b>3.	To run on a single node (single GPU), enter </b>
 <code>
 
 TF_ROCM_FUSION_ENABLE=1
 
 python3 cifar10_main.py \
-
---data-dir=${PWD}/cifar-10-data \
-
---job-dir=/tmp/cifar10 \
-
---num-gpus=1 \
-
---train-steps=100
+<br>--data-dir=${PWD}/cifar-10-data \
+<br>--job-dir=/tmp/cifar10 \
+<br>--num-gpus=1 \
+<br>--train-steps=100
 
 </code>
 <b>4.	To run on a single node (multi GPUs (data parallelism)), enter </b>
