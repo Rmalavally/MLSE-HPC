@@ -54,6 +54,7 @@ clock: 33MHz
 capabilities: pm pciexpress msi bus_master cap_list rom
 
 configuration: driver=amdgpu latency=0
+
 </code>
 	  
 
@@ -66,10 +67,11 @@ wget https://github.com/rocmsys/RET.git</br>
 
 cd  RET
 
-sudo ./ret install rocm 
+sudo ./ret install rocm
+#see all options 
 
-#see all options </br>
 sudo ./ret -h
+
 </code>
 
 ## Installing the Applications
@@ -78,6 +80,7 @@ To install Tensorflow, PyTorch, NAMD and other applications, enter
 <code>
 cd ~/RET <br>
 sudo ./ret install <my application> <br>
+
 
 #For example,<br>
 sudo ./ret install tensorflow <br>
