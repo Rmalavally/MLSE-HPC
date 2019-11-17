@@ -235,6 +235,7 @@ and common image transformations for computer vision.</b>
 pip3 install torchvision
 </code>
 
+
 <br><b><font color = "blue">Issue</font>: The error message indicates a problem with the locale setting. </b>
 
 *Error: unsupported locale setting*
