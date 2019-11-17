@@ -32,17 +32,17 @@ You will see the output for each PCle device. The vendor in the output must disp
 
 For example, see the code sample below:
 
-<code>*-display<br>
-       description: Display controller<br>
-       product: Vega 20<br>
-       vendor: Advanced Micro Devices, Inc. [AMD/ATI]<br>
-       physical id: 0<br>
-       bus info: pci@0000:03:00.0<br>
-      version: 02<br>
-      width: 64 bits<br>
-      clock: 33MHz <br>
-      capabilities: pm pciexpress msi bus_master cap_list rom<br>
-      configuration: driver=amdgpu latency=0<br>
+<code>*-display
+       <br>description: Display controller
+       <br>product: Vega 20
+       <br>vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+       <br>physical id: 0
+       <br>bus info: pci@0000:03:00.0
+      <br>version: 02
+      <br>width: 64 bits
+      <br>clock: 33MHz 
+      <br>capabilities: pm pciexpress msi bus_master cap_list rom<br>
+      <br>configuration: driver=amdgpu latency=0
 	  </code>
 	  
 
@@ -50,13 +50,14 @@ For example, see the code sample below:
 To install the ROCm application, run RET with the install command:
 
 	  
-<code>sudo apt -y install git <br>
-cd ~/<br>
-wget https://github.com/rocmsys/RET.git<br>
-cd  RET<br>
-sudo ./ret install rocm <br>
+<code>sudo apt -y install git 
+<br>cd ~/
+<br>wget https://github.com/rocmsys/RET.git
+<br>cd  RET<br>
+<br>sudo ./ret install rocm 
+
 #see all options <br>
-sudo ./ret -h
+<br>sudo ./ret -h
 </code>
 
 ## Installing the Applications
